@@ -2,6 +2,28 @@
 학습한 내용이나, 메모용을 위한 repository
 
 ## 2024.02
+#### 다음으로 진행할 사이드 프로젝트 진행시 관심있는 기술 및 프로젝트 주제 
+- 무한 스티커 게시판 프로젝트
+- 메이플랜드 오픈 api를 이용한 프로젝트
+- ui kit library npm에 배포
+- 스토리북
+- next server component
+- react portal
+- zustand, theme, dark mode    
+- aws, mysql 배포
+- Next auth, Oauth2.0, jwt 이용
+- React query, zustand, react portal
+- Next app route, server component, fetch caching 기능 이용 
+- 웹소켓, 웹RTC
+- 크롤링
+- 카카오 오픈 api 이용
+- 베스트 댓글 모음집 
+- 스토리북 배포
+```
+사이드 프로젝트 주제 선정
+https://www.youtube.com/watch?v=L0jjicJ85NI
+```
+
 #### Design System Component 만들 때 styling은 어떻게 하는 것이 좋을까?
 일단 Nexts js 공홈을 살펴보니 4가지 선택권이 있었다. (https://nextjs.org/docs/app/building-your-application/styling/css-modules)
 1. css module
