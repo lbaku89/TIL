@@ -1,7 +1,7 @@
 # Description
 학습한 내용이나, 메모용을 위한 repository
 
-## 2024.12
+## 2024.02
 #### Design System Component 만들 때 styling은 어떻게 하는 것이 좋을까?
 일단 Nexts js 공홈을 살펴보니 4가지 선택권이 있었다. (https://nextjs.org/docs/app/building-your-application/styling/css-modules)
 1. css module
