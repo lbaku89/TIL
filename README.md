@@ -2,6 +2,17 @@
 학습한 내용이나, 메모용을 위한 repository
 
 ## 2024.02
+
+
+#### semantic versions in published packages  
+
+![image](https://github.com/lbaku89/TIL/assets/96039047/e71d1d39-e92b-4616-91e1-bc4766ca242a)
+
+#### pre-onboarding 3월 프론트엔드 챌린지 커리큘럼    
+
+![image](https://github.com/lbaku89/TIL/assets/96039047/78de917c-5db7-467d-9d00-5e19af9b245c)
+
+
 #### 다음으로 진행할 사이드 프로젝트 진행시 관심있는 기술 및 프로젝트 주제 
 - 무한 스티커 게시판 프로젝트
 - 메이플랜드 오픈 api를 이용한 프로젝트
