@@ -3,7 +3,11 @@
 
 ## 2024.02
 
-
+#### 새로운 프로젝트 진행시 ... 
+  - 기상청 open api 이용 하자
+  - Nextjs
+  - react-query
+  - redux-toolkit or zustand
 #### semantic versions in published packages  
 
 ![image](https://github.com/lbaku89/TIL/assets/96039047/e71d1d39-e92b-4616-91e1-bc4766ca242a)
