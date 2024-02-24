@@ -8,6 +8,7 @@
   - Nextjs
   - react-query
   - redux-toolkit or zustand
+  - 노드 서버 구축
 #### semantic versions in published packages  
 
 ![image](https://github.com/lbaku89/TIL/assets/96039047/e71d1d39-e92b-4616-91e1-bc4766ca242a)
