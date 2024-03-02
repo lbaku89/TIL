@@ -1,6 +1,14 @@
 # Description
 학습한 내용이나, 메모용을 위한 repository
 
+## 2024.03 
+
+#### Nextjs Lint 설정에 관해 ... 
+https://nextjs.org/docs/app/building-your-application/configuring/eslint (공홈) 을 확인해본 결과 
+- Nextjs 설치 시 typescript option을 설정하면 깔리는 eslint-config-next 는 recommended configuration 이라고 한다.
+- Nextjs 를 사용하면서 생길 수 있는 common issue 들을 catch 할 수 있는 lint config 이므로 기본으로 깔리는 설정으로 사용하기를 권장한다.
+- 다른 config 사용할 시 guide 문서도 제공된다. 
+
 ## 2024.02
 
 #### 새로운 프로젝트 진행시 ... 
