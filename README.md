@@ -3,6 +3,9 @@
 
 ## 2024.03 
 
+#### debounce 직접 구현 경험 공유
+- https://eun-jee.com/post/front-end/debounce_in_React/
+
 #### 앞으로의 공부 방향
 - React, Ts, Yarn, Prettier, emotion, interaction, Jest Test, 
 
