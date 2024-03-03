@@ -3,6 +3,9 @@
 
 ## 2024.03 
 
+#### 앞으로의 공부 방향
+- React, Ts, Yarn, Prettier, emotion, interaction, Jest Test, 
+
 #### 프로그래머스 모의 과제 테스트  
 https://school.programmers.co.kr/skill_check_assignments?page=1
 
