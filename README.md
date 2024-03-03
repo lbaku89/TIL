@@ -3,6 +3,9 @@
 
 ## 2024.03 
 
+#### 프로그래머스 모의 과제 테스트  
+https://school.programmers.co.kr/skill_check_assignments?page=1
+
 #### Nextjs Lint 설정에 관해 ... 
 https://nextjs.org/docs/app/building-your-application/configuring/eslint (공홈) 을 확인해본 결과 
 - Nextjs 설치 시 typescript option을 설정하면 깔리는 eslint-config-next 는 recommended configuration 이라고 한다.
