@@ -3,6 +3,27 @@
 
 ## 2024.03 
 
+
+#### call, apply, bind
+- call
+```js
+const hyunwoo = { name:"hyunwoo"}
+
+function showName(){
+  console.log(this.name)
+}
+
+const showName2(){
+  console.log(this.name)
+}
+
+showName.call(hyunwoo) // hyunwoo <- 실행 컨텍스트에서 this를 해석
+showName2.call(hyunwoo) // undefined <- arrow function은 정의 될 때
+// this를 판단하기 때문에 여기서 this는 window나 node 같은 요소로 판단 하기 때문에 undefined가 출력
+
+``` 
+
+
 #### debounce 
 - 구현 경험기 
   - https://eun-jee.com/post/front-end/debounce_in_React/
