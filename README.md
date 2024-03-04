@@ -3,8 +3,36 @@
 
 ## 2024.03 
 
-#### debounce 직접 구현 경험 공유
-- https://eun-jee.com/post/front-end/debounce_in_React/
+#### debounce 
+- 구현 경험기 
+  - https://eun-jee.com/post/front-end/debounce_in_React/
+- 기본 원리
+ ```html
+//index.html
+
+...
+<button onclick="debounce(log,1000)">버튼</button>
+...
+
+<script>
+  let timerObj = null // timer 라는 변수는 비어있음
+   
+  const log =()=>{
+      console.log('hello')
+  }
+
+  // 호출 시 timerObj에 setTimeout 존재 시 해당 timer를 clear 하고 새로운 setTimeout 실행 
+  const debounce = (fn,delay) =>{
+    if(timerObj){    
+      clearTimeout(timerObj)
+    }
+    timerObj = setTimeout(()=>{
+      fn()
+    },delay) 
+  }
+
+</script>
+``` 
 
 #### 앞으로의 공부 방향
 - React, Ts, Yarn, Prettier, emotion, interaction, Jest Test, 
