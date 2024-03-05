@@ -3,6 +3,62 @@
 
 ## 2024.03 
 
+#### Nextjs 실험: 서버컴포넌트 loading 시 fallback UI 처리 해보자
+아래와 같이 실험 시 serverComponent1 는 promise가 도는 10초동안 fallback UI가 대체 되고 그 후 나타났다.
+나머지 컴포넌트1,2,3는 serverComponent1과 독립적으로 화면에 렌더링 되어 있었다. 
+
+```tsx
+// page.tsx 
+import { lazy, Suspense } from "react";
+const ServerComponent1 = lazy(() => import("./_component/ServerComponent1")); 
+
+return (
+  <다른컴포넌트1 />
+  <Suspense
+    fallback={<div>suspense loading ui</div>}>
+  >
+    <serverComponent1 />
+  </Suspense>
+  <다른컴포넌트2 />
+  <다른컴포넌트3 />
+)
+
+// serverComponent1.tsx
+export default function ServerComponent1() {
+    const promise:Promise<string> = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('안녕하세요')
+        }, 10000)
+    })
+
+    return (
+        <div>
+            <h3>test</h3>
+            <h3>test</h3>
+            <h3>test</h3>
+            <h3>test</h3>
+            <h3>test</h3>
+            <h3>test</h3>
+            <h3>test</h3>
+            <h3>test</h3>
+            <h3>test</h3>
+            <h3>test</h3>
+            <h3>test</h3>
+            <h3>test</h3>
+            {promise}
+        </div>
+    )
+}
+```
+
+lazy 없이 사용하게 된다면 아래와 같은 에러가 뜬다 
+( 대충 서버에서 렌더링된 모습과 클라이언트에서 하이드레이션 된 모습이 다르다는 식의 내용이다 ) 
+
+![image](https://github.com/lbaku89/TIL/assets/96039047/7a9ca761-ebb1-482b-bf64-70e309670d47)
+
+
+
+
 
 #### call, apply, bind
 - call
