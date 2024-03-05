@@ -3,6 +3,9 @@
 
 ## 2024.03 
 
+#### Errorboundary 직접 구현해보자
+참고:https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary
+
 #### Nextjs 실험: 서버컴포넌트 loading 시 fallback UI 처리 해보자
 아래와 같이 실험 시 serverComponent1 는 promise가 도는 10초동안 fallback UI가 대체 되고 그 후 나타났다.
 나머지 컴포넌트1,2,3는 serverComponent1과 독립적으로 화면에 렌더링 되어 있었다. 
