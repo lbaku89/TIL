@@ -3,6 +3,9 @@
 
 ## 2024.03 
 
+
+#### editor 직접 만들어보기
+
 #### Lexical Editor library
 - Meta 에서 제공하는 에디터 라이브러리 
   - git: https://github.com/facebook/lexical
