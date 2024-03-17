@@ -3,6 +3,10 @@
 
 ## 2024.03 
 
+#### Lexical Editor library
+- Meta 에서 제공하는 에디터 라이브러리 
+  - git: https://github.com/facebook/lexical
+
 #### Errorboundary 직접 구현해보자
 참고:https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary
 
