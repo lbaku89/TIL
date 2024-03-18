@@ -79,7 +79,7 @@ function showName(){
   console.log(this.name)
 }
 
-const showName2(){
+const showName2=()=>{
   console.log(this.name)
 }
 
