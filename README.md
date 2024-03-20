@@ -3,6 +3,19 @@
 
 ## 2024.03 
 
+#### useRef
+```tsx
+// react client component
+....
+  let ref = useRef(null)   
+  console.log(ref) // ref: {current:null, ...props}
+  
+  ref.current = 5
+  console.log(ref) // ref: {current: 5, ...props}
+...
+```
+<br>
+   
 
 #### editor 직접 만들어보기
 
