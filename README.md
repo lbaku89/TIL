@@ -3,6 +3,11 @@
 
 ## 2024.03 
 
+#### 영상시청
+- https://www.youtube.com/watch?v=2lIde1abdBY ( 일반함수, 화살표함수 this )
+- https://www.youtube.com/watch?v=kllWOdnU1Fg ( useRef 관련 )
+<br/>
+
 #### useRef
 ```tsx
 // react client component
