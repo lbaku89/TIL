@@ -3,6 +3,69 @@
 
 ## 2024.03 
 
+#### 일반함수, 화살표 함수의 this bind 
+- 요약하자면
+  - 일반함수
+    - this는 함수를 호출하는 객체를 지칭함
+    - 함수가 선언되는 위치와 상관없이 함수가 어떻게 호출되는지에 따라 this가 결정됨
+  - 화살표함수
+    - this는 함수를 감싸는 객체의 외부 스코프를 지칭함
+    - 함수가 어떻게 호출되는지와 상관없이 함수를 선언한 위치에 따라 this가 결정
+```js
+const obj1={
+  fn:()=>{ console.log(this) }
+}
+obj1.fn() // window 
+// 화살표 함수의 this는 해당 함수를 감싸고 있는 객체의 외부 스코프를 this로 가져온다
+
+const obj2={
+  fn:function(){ console.log(this) }
+}
+obj2.fn() // obj2
+// 일반함수의 this는 함수를 호출한 객체가 된다.
+
+const obj3={
+  fn:function(){
+    function innerFn(){
+      console.log(this)
+    }
+    innerFn()
+ }
+}
+obj3.fn() // window
+// 일반함수의 this는 함수를 호출한 객체가 된다.
+// 일반함수의 선언되는 위치와 상관없이 호출방법에 따라 this가 결정된다.
+
+
+const obj4={
+  fn:function(){
+    const innerFn=()=>{
+      console.log(this)
+    }
+    innerFn()
+ }
+}
+obj4.fn() // object4
+// 화살표함수의 this는 함수를 감싸고 있는 객체의 외부 스코프를 지칭한다.
+// 화살표함수의 this는 함수의 호출 방법과 상관없이 함수를 선언한 위치에 의해 결정된다.
+
+obj5 ={
+  fn:{
+    fn2:function(){
+      console.log(this)
+    }
+  }
+}
+
+const p = obj5.fn.fn2
+p() // window
+obj5.fn.fn2() // fn을 가리킴
+
+// 일반함수는 함수가 어떻게 호출되는지에 따라 this 결정 ...
+
+```
+
+
 #### 영상시청
 - https://www.youtube.com/watch?v=2lIde1abdBY ( 일반함수, 화살표함수 this )
 - https://www.youtube.com/watch?v=kllWOdnU1Fg ( useRef 관련 )
