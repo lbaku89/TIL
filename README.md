@@ -3,6 +3,25 @@
 
 ## 2024.03 
 
+
+#### useDebounce.ts 구현
+```ts
+import { useRef } from 'react'
+import { MutableRefObject } from 'react'
+export default function useDebounce(fn: (...args: unknown[]) => void, delay: number) {
+  let timer: MutableRefObject<null | ReturnType<typeof setTimeout>> = useRef(null)
+  return (...args: any[]) => {
+    if (timer.current) {
+      clearTimeout(timer.current)
+    }
+    timer.current = setTimeout(() => {
+      fn(...args)
+    }, delay)
+  }
+}
+```
+
+
 #### Typescript 에서 any, unknown, never
 - https://xo.dev/articles/typescript-unknown-any-never
 - https://www.winterlood.com/qna/any%EC%99%80%20unknown%20%EB%B0%B0%EC%97%B4%EC%9D%98%20%EC%B0%A8%EC%9D%B4
