@@ -3,6 +3,11 @@
 
 ## 2024.03 
 
+#### Typescript 에서 any, unknown, never
+- https://xo.dev/articles/typescript-unknown-any-never
+- https://www.winterlood.com/qna/any%EC%99%80%20unknown%20%EB%B0%B0%EC%97%B4%EC%9D%98%20%EC%B0%A8%EC%9D%B4
+<br/>
+
 #### 일반함수, 화살표 함수의 this bind 
 - 요약하자면
   - 일반함수
